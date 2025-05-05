@@ -20,11 +20,12 @@ def index():
     location_data = fetch_tripadvisor_data(session['city'], session['state'], "restaurants", use_cache_only=True)
     location_data.extend(fetch_tripadvisor_data(session['city'], session['state'], "hotels", use_cache_only=True))
     location_data.extend(fetch_tripadvisor_data(session['city'], session['state'], "attractions", use_cache_only=True))
-    return render_template('index.html', city=session['city'], state=session['state'], category=session['category'], location_data=location_data)
+    return render_template('index.html', city=session['city'], state=session['state'], location_data=location_data)
 
 @app.route("/about")
 def about():
-    return render_template('about.html')
+    message = """This is a demo flask application that collects travel data from TripAdvisor. It was created as a part of the TCSS 506 Course."""
+    return render_template('about.html', message=message, author="Sean Warlick")
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)

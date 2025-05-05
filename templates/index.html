@@ -21,13 +21,13 @@
                     <!-- Carousel with cards for hotels -->
                     <div id="hotelCarousel" class="carousel slide" data-bs-ride="carousel">
                         <!-- Carousel indicators -->
-                        <div class="carousel-indicators">
+                        <!-- <div class="carousel-indicators">
                             {% for business in location_data if business.category == "hotels" %}
                             <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="{{ loop.index0 }}"
                                 {% if loop.first %}class="active" aria-current="true" {% endif %}
                                 aria-label="Slide {{ loop.index }}"></button>
                             {% endfor %}
-                        </div>
+                        </div> -->
 
                         <!-- Carousel items -->
                         <div class="carousel-inner">
@@ -85,13 +85,13 @@
                     <!-- Carousel with cards -->
                     <div id="businessCarousel" class="carousel slide" data-bs-ride="carousel">
                         <!-- Carousel indicators -->
-                        <div class="carousel-indicators">
+                        <!-- <div class="carousel-indicators">
                             {% for business in location_data if business.category == "attractions" %}
                             <button type="button" data-bs-target="#businessCarousel"
                                 data-bs-slide-to="{{ loop.index0 }}" {% if loop.first %}class="active"
                                 aria-current="true" {% endif %} aria-label="Slide {{ loop.index }}"></button>
                             {% endfor %}
-                        </div>
+                        </div> -->
 
                         <!-- Carousel items -->
                         <div class="carousel-inner">
@@ -149,13 +149,13 @@
                     <!-- Carousel with cards -->
                     <div id="restaurantCarousel" class="carousel slide" data-bs-ride="carousel">
                         <!-- Carousel indicators -->
-                        <div class="carousel-indicators">
+                        <!-- <div class="carousel-indicators">
                             {% for business in location_data if business.category == "restaurants" %}
                             <button type="button" data-bs-target="#restaurantCarousel"
                                 data-bs-slide-to="{{ loop.index0 }}" {% if loop.first %}class="active"
                                 aria-current="true" {% endif %} aria-label="Slide {{ loop.index }}"></button>
                             {% endfor %}
-                        </div>
+                        </div> -->
 
                         <!-- Carousel items -->
                         <div class="carousel-inner">
